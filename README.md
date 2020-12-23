@@ -2,6 +2,10 @@
 
 A simplified version of a popular game called <<Flappy Bird>> that everyone can kill some time playing this game.
 
+Done by:
+Syrgak  Abdurakhmanov
+Azizkhan Azemkulov
+
 Imported libraries:
 pygame
 sys
