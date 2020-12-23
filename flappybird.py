@@ -81,7 +81,6 @@ screen = pygame.display.set_mode((576, 1024))
 clock = pygame.time.Clock()
 game_font = pygame.font.Font('04B_19__.TTF', 40)
 
-# Game Variables
 gravity = 0.25
 bird_movement = 0
 game_active = True
@@ -154,14 +153,12 @@ while True:
     screen.blit(bg_surface, (0, 0))
 
     if game_active:
-        # Bird
         bird_movement += gravity
         rotated_bird = rotate_bird(bird_surface)
         bird_rect.centery += bird_movement
         screen.blit(rotated_bird, bird_rect)
         game_active = check_collision(pipe_list)
 
-        # Pipes
         pipe_list = move_pipes(pipe_list)
         draw_pipes(pipe_list)
         score += 0.01
@@ -171,7 +168,6 @@ while True:
         high_score = update_score(score, high_score)
         score_display('game_over')
 
-    # Floor
     floor_x_pos -= 1
     draw_floor()
     if floor_x_pos <= -576:
