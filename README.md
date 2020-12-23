@@ -1,6 +1,6 @@
 # flappybird
 
-A simplified version of a popular game called <<Flappy Bird>> that everyone can kill some time playing this game.
+A simplified version of a popular game called "Flappy Bird" that everyone can kill some time playing this game.
 
 Done by:
 Syrgak  Abdurakhmanov
